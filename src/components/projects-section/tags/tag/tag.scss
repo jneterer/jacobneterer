@@ -1,0 +1,46 @@
+.tag {
+  @apply bg-white;
+  @apply border-blue-900;
+  @apply font-bold;
+  @apply mt-3;
+  @apply mr-2;
+  @apply py-2;
+  @apply px-6;
+  @apply rounded-full;
+  @apply text-blue-900;
+  @apply text-base;
+  @apply transition-all;
+  @apply duration-150;
+  @screen md {
+    @apply text-lg;
+  }
+  &:hover, .project-tags-container & {
+    @apply cursor-pointer;
+  }
+  &:hover, .project-tags-container &, .content-text & {
+    @apply bg-blue-100;
+  }
+  .content-text & {
+    @apply border-none;
+    @apply cursor-default;
+  }
+  &.selected {
+    @apply bg-blue-900;
+    @apply text-white;
+  }
+  &:hover, &.selected {
+    @apply transition-all;
+    @apply duration-150;
+  }
+  .can-select {
+    @apply cursor-pointer;
+  }
+  .project-tags-container & {
+    @apply border-none;
+    @apply mt-2;
+    @apply mr-2;
+    @apply py-1;
+    @apply px-3;
+    @apply text-sm;
+  }
+}

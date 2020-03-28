@@ -1,0 +1,62 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  color: hsla(0, 0%, 0%, 0.8);
+  font-family: georgia, serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+* {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply text-blue-900;
+  &:focus {
+    @apply outline-none;
+  }
+}
+.main-content-container {
+  @apply absolute;
+  @apply top-18;
+  @apply right-0;
+  @apply bottom-0;
+  @apply left-0;
+  @apply left-0;
+  @apply overflow-y-scroll;
+}
+footer {
+  @apply bg-blue-900;
+  @apply py-12;
+  @apply text-center;
+  * {
+    @apply text-white;
+  }
+  a:not(:first-child) {
+    @apply ml-8;
+  }
+  svg {
+    @apply fill-current;
+    @apply w-12;
+    @apply h-12;
+  }
+  .twitter-icon-container {
+     svg path {
+      fill: theme('colors.blue.900');
+    }
+  }
+  h2 {
+    @apply mb-0;
+  }
+}
