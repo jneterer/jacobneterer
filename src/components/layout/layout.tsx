@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
           <a href="https://twitter.com/jacobneterer" target="_blank" className="twitter-icon-container" ><IconTwitter /></a>
           <a href="https://github.com/jneterer" target="_blank" ><IconGithub /></a>
           <a href="mailto:jacobrneterer@gmail.com" ><IconEmail /></a>
-          <h2>Built by <a href="https://jacobneterer.com" target="_blank">Jacob Neterer</a></h2>
+          <h2>Stay in touch!</h2>
         </footer>
       </div>
     </>
