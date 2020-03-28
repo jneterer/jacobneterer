@@ -2,9 +2,10 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Sanity Developer Portfolio Starter`,
-    description: `Get your development portfolio off the ground with this deployment-ready Gatsby + Sanity CMS Starter.`,
-    author: `@gatsbyjs`,
+    title: `Jacob Neterer`,
+    description: `My name is Jacob Neterer and I'm a full stack web developer!`,
+    author: `@jneterer`,
+    siteUrl: `https://jacobneterer.com`,
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -43,5 +44,6 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
