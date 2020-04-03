@@ -10,6 +10,7 @@ import SEO from "../../components/seo";
 import { IProject } from "../../contracts/projects/project/iproject";
 import { ITag } from "../../contracts/tags/tag/itag";
 import "./project.scss";
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Project: FunctionComponent<{data: { sanityProject: IProject }}> = ({ data }) => {
   return <Layout>
@@ -24,17 +25,17 @@ const Project: FunctionComponent<{data: { sanityProject: IProject }}> = ({ data 
               <div className="icons-container">
                 {
                   data.sanityProject.githubUrl && 
-                    <a href={data.sanityProject.githubUrl} target="_blank" >
+                    <OutboundLink href={data.sanityProject.githubUrl} target="_blank" >
                       <IconGithub />
                       <span>Github Repo</span>
-                    </a>
+                    </OutboundLink>
                 }
                 {
                   data.sanityProject.siteUrl &&
-                    <a href={data.sanityProject.siteUrl} target="_blank" >
+                    <OutboundLink href={data.sanityProject.siteUrl} target="_blank" >
                       <IconLink />
                       <span>Visit Site</span>
-                    </a>
+                    </OutboundLink>
                 }
               </div>
           }

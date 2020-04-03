@@ -6,6 +6,7 @@
  */
 
 import { graphql, useStaticQuery } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import PropTypes from "prop-types"
 import React from "react"
 import Header from "../header/header"
@@ -31,9 +32,9 @@ const Layout = ({ children }) => {
       <div className="main-content-container">
         <main>{children}</main>
         <footer>
-          <a href="https://twitter.com/jacobneterer" target="_blank" className="twitter-icon-container" ><IconTwitter /></a>
-          <a href="https://github.com/jneterer" target="_blank" ><IconGithub /></a>
-          <a href="mailto:jacobrneterer@gmail.com" ><IconEmail /></a>
+          <OutboundLink href="https://twitter.com/jacobneterer" target="_blank" className="twitter-icon-container" ><IconTwitter /></OutboundLink>
+          <OutboundLink href="https://github.com/jneterer" target="_blank" ><IconGithub /></OutboundLink>
+          <OutboundLink href="mailto:jacobrneterer@gmail.com" ><IconEmail /></OutboundLink>
           <h2>Stay in touch!</h2>
         </footer>
       </div>

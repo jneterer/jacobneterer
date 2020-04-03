@@ -8,6 +8,14 @@ module.exports = {
     siteUrl: `https://jacobneterer.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.TRACKING_ID,
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {	
