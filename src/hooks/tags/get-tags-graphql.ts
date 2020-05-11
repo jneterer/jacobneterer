@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { IGetTagsResponse } from "./iget-tags-response";
+import { IGetTagsResponse } from '../../contracts/tags/iget-tags-response';
 
 export const GetTagsGraphql = (): IGetTagsResponse => {
   const projectsAndTags: IGetTagsResponse = useStaticQuery(

@@ -16,6 +16,7 @@ const Header = () => {
       </div>
       <div className="right-menu-container">
         <Link className="nav-button" to="/#about" onClick={() => setExpanded(false)} >About</Link>
+        <Link className="nav-button" to="/blog-posts" onClick={() => setExpanded(false)} >Blog Posts</Link>
         <Link className="nav-button" to="/#projects" onClick={() => setExpanded(false)} >Projects</Link>
       </div>
     </header>
