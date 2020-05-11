@@ -5,7 +5,7 @@ export const GetPosts = (): IGetPostsResponse => {
   const posts: IGetPostsResponse = useStaticQuery(
     graphql`query 
       {
-        allSanityPost(filter: {active: {eq:true}}, sort: {fields: datePosted, order: DESC}) {
+        allSanityPost(sort: {fields: datePosted, order: DESC}) {
           nodes {
             _id
             datePosted(formatString: "MMMM Do, YYYY")

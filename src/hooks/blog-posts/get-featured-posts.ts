@@ -5,7 +5,7 @@ export const GetFeaturedPosts = (): IGetPostsResponse => {
   const posts: IGetPostsResponse = useStaticQuery(
     graphql`query 
       {
-        allSanityPost(filter: {featuredPost: {eq: true}, active: {eq:true}}, sort: {fields: datePosted, order: DESC}) {
+        allSanityPost(filter: {featuredPost: {eq: true}}, sort: {fields: datePosted, order: DESC}) {
           nodes {
             _id
             datePosted(formatString: "MMMM Do, YYYY")

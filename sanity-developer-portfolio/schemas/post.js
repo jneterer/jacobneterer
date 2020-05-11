@@ -31,14 +31,6 @@ export default {
         }
       },
       {
-        name: 'active',
-        title: 'Active',
-        type: 'boolean',
-        options: {
-          layout: 'checkbox'
-        }
-      },
-      {
         name: 'featuredPost',
         title: 'Featured Post',
         type: 'boolean',
