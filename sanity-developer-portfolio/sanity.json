@@ -1,5 +1,9 @@
 {
   "root": true,
+  "api": {
+    "projectId": "zfb9idzl",
+    "dataset": "production"
+  },
   "project": {
     "name": "sanity-developer-portfolio"
   },
@@ -8,7 +12,9 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "@sanity/dashboard",
+    "dashboard-widget-netlify"
   ],
   "env": {
     "development": {
@@ -21,6 +27,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema.js"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "src/dashboardConfig.js"
     }
   ]
 }
