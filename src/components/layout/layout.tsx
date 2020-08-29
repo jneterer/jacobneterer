@@ -12,6 +12,7 @@ import React from "react"
 import Header from "../header/header"
 import IconEmail from "../icons/icon-email"
 import IconGithub from "../icons/icon-github"
+import IconLinkedIn from "../icons/icon-linkedin"
 import IconTwitter from "../icons/icon-twitter"
 import "./layout.scss"
 
@@ -32,8 +33,9 @@ const Layout = ({ children }) => {
       <div className="main-content-container">
         <main>{children}</main>
         <footer>
-          <OutboundLink href="https://twitter.com/jacobneterer" target="_blank" className="twitter-icon-container" ><IconTwitter /></OutboundLink>
           <OutboundLink href="https://github.com/jneterer" target="_blank" ><IconGithub /></OutboundLink>
+          <OutboundLink href="https://www.linkedin.com/in/jacobneterer" target="_blank" ><IconLinkedIn /></OutboundLink>
+          <OutboundLink href="https://twitter.com/jacobneterer" target="_blank" className="twitter-icon-container" ><IconTwitter /></OutboundLink>
           <OutboundLink href="mailto:jacobrneterer@gmail.com" ><IconEmail /></OutboundLink>
           <h2>Stay in touch!</h2>
         </footer>
